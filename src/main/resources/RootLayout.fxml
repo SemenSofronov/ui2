@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane prefHeight="400.0" prefWidth="600.0"
+            xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.company.housekeeping.view.RootLayoutController">
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="Счёт">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Счета бухгалтерии" onAction="#handleBill"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Категория">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Доходы" onAction="#handleRevenueOperation"/>
+                        <MenuItem mnemonicParsing="false" text="Расходы" onAction="#handleExpensesOperation"/>
+                        <MenuItem mnemonicParsing="false" text="Настройки категорий" onAction="#handleCategory"/>
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Инструменты">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Статистика операций" onAction="#handleStatistics"/>
+                        <!--<MenuItem mnemonicParsing="false" text="Настройки" onAction="#handleSettings"/>-->
+                    </items>
+                </Menu>
+
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>
